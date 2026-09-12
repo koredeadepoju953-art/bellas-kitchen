@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Menu | Bella's Kitchen</title>
+    <link rel="icon" type="image/jpeg" href="img/Bella's logo.jpeg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+
+<header>
+    <div class="logo">
+        <a href="index.html" class="logo-link">
+            <img src="img/Bella's logo.jpeg" alt="Bella's Kitchen logo">
+            <h1>Bella's Kitchen</h1>
+        </a>
+    </div>
+
+    <!-- Navigation -->
+    <nav>
+        <ul>
+            <li><a href="index.html#home">Home</a></li>
+            <li><a href="index.html#about">About Us</a></li>
+            <li><a href="menu.html" class="active">Our Menu</a></li>
+            <li><a href="cart.html">Cart <span class="cart-badge">0</span></a></li>
+            <li><a href="checkout.html">Checkout</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <section class="menu-page">
+        <h2>Our Delicacies</h2>
+        <p class="menu-subtitle">Crafted with passion, fresh ingredients, and authentic flavors.</p>
+
+        <div class="menu-filters">
+            <button class="filter-btn active" data-category="All">All Delicacies</button>
+            <button class="filter-btn" data-category="Starters">Starters</button>
+            <button class="filter-btn" data-category="Main Courses">Main Courses</button>
+            <button class="filter-btn" data-category="Chef's Specials">Chef's Specials</button>
+            <button class="filter-btn" data-category="Desserts">Desserts</button>
+        </div>
+
+        <div class="menu-items-grid" id="menu-items-grid">
+            <!-- dish cards render here via script.js -->
+        </div>
+    </section>
+</main>
+
+<footer>
+    <div class="footer-content">
+        <!-- Restaurant information -->
+        <div class="footer-section">
+            <h2>Bella's Kitchen</h2>
+            <p>Where our delicacies speak grace.</p>
+        </div>
+
+        <!-- Quick links -->
+        <div class="footer-section">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="index.html#home">Home</a></li>
+                <li><a href="index.html#about">About Us</a></li>
+                <li><a href="menu.html">Our Menu</a></li>
+                <li><a href="cart.html">Cart</a></li>
+                <li><a href="checkout.html">Checkout</a></li>
+            </ul>
+        </div>
+
+        <!-- Contact information -->
+        <div class="footer-section">
+            <h3>Contact Us</h3>
+            <p>📍 153, Alfred Ruwan rd, Colombo 07, Lagos State, Nigeria</p>
+            <p>📞 +2349056637999</p>
+            <p>✉️ hello@bellaskitchen.com</p>
+        </div>
+
+        <!-- Opening hours -->
+        <div class="footer-section">
+            <h3>Opening Hours</h3>
+            <p>Monday - Friday: 10:00 AM - 9:00 PM</p>
+            <p>Saturday - Sunday: 11:00 AM - 10:00 PM</p>
+        </div>
+    </div>
+
+    <!-- Copyright -->
+    <div class="copyright">
+        <p>© 2026 Bella's Kitchen. All rights reserved.</p>
+        <p>Made with love, served with flavor.</p>
+    </div>
+</footer>
+
+<script src="js/menu-data.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>

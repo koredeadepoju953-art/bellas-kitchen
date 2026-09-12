@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout | Bella's Kitchen</title>
+    <link rel="icon" type="image/jpeg" href="img/Bella's logo.jpeg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+
+<header>
+  <div class="logo">
+    <a href="index.html" class="logo-link">
+      <img src="img/Bella's logo.jpeg" alt="Bella's Kitchen logo">
+      <h1>Bella's Kitchen</h1>
+    </a>
+  </div>
+
+  <!-- Navigation -->
+  <nav>
+    <ul>
+      <li><a href="index.html#home">Home</a></li>
+      <li><a href="index.html#about">About Us</a></li>
+      <li><a href="menu.html">Our Menu</a></li>
+      <li><a href="cart.html">Cart <span class="cart-badge">0</span></a></li>
+      <li><a href="checkout.html" class="active">Checkout</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+    <section class="checkout-page">
+        <h2>Checkout & Delivery</h2>
+
+        <!-- Order Success State -->
+        <div id="checkout-success" class="success-banner" style="display: none;">
+            <h3>🎉 Thank You for Your Order!</h3>
+            <p>Your order details have been forwarded to our WhatsApp line.</p>
+            <p>We will confirm preparation and delivery shortly.</p>
+            <a href="menu.html" class="btn" style="margin-top: 15px;">Order More Delicacies</a>
+        </div>
+
+        <div id="checkout-empty" class="cart-empty-state" style="display: none;">
+            <p>Your cart is empty. Please add items to your cart before proceeding.</p>
+            <a href="menu.html" class="btn">Explore Our Menu</a>
+        </div>
+
+        <div id="checkout-summary" class="checkout-summary-box">
+            <!-- order summary renders here via script.js -->
+        </div>
+
+        <form id="checkout-form">
+            <h3>Delivery Details</h3>
+            <label for="customer-name">Full Name *</label>
+            <input type="text" id="customer-name" placeholder="e.g. Chioma Adebayo" required>
+
+            <label for="customer-phone">Phone Number *</label>
+            <input type="tel" id="customer-phone" placeholder="e.g. 08012345678" required>
+
+            <label for="customer-address">Delivery Address *</label>
+            <textarea id="customer-address" rows="3" placeholder="Enter your full street address, apartment/suite number, and city" required></textarea>
+
+            <label for="customer-notes">Order Notes (optional)</label>
+            <textarea id="customer-notes" rows="2" placeholder="Any dietary preferences or delivery instructions?"></textarea>
+
+            <button type="submit" class="btn btn-block">Place Order via WhatsApp</button>
+        </form>
+    </section>
+</main>
+
+<footer>
+    <div class="footer-content">
+        <!-- Restaurant information -->
+        <div class="footer-section">
+            <h2>Bella's Kitchen</h2>
+            <p>Where our delicacies speak grace.</p>
+        </div>
+
+        <!-- Quick links -->
+        <div class="footer-section">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="index.html#home">Home</a></li>
+                <li><a href="index.html#about">About Us</a></li>
+                <li><a href="menu.html">Our Menu</a></li>
+                <li><a href="cart.html">Cart</a></li>
+                <li><a href="checkout.html">Checkout</a></li>
+            </ul>
+        </div>
+
+        <!-- Contact information -->
+        <div class="footer-section">
+            <h3>Contact Us</h3>
+            <p>📍 153, Alfred Ruwan rd, Colombo 07, Lagos State, Nigeria</p>
+            <p>📞 +2349056637999</p>
+            <p>✉️ hello@bellaskitchen.com</p>
+        </div>
+
+        <!-- Opening hours -->
+        <div class="footer-section">
+            <h3>Opening Hours</h3>
+            <p>Monday - Friday: 10:00 AM - 9:00 PM</p>
+            <p>Saturday - Sunday: 11:00 AM - 10:00 PM</p>
+        </div>
+    </div>
+
+    <!-- Copyright -->
+    <div class="copyright">
+        <p>© 2026 Bella's Kitchen. All rights reserved.</p>
+        <p>Made with love, served with flavor.</p>
+    </div>
+</footer>
+
+<script src="js/menu-data.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>

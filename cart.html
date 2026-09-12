@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Cart | Bella's Kitchen</title>
+    <link rel="icon" type="image/jpeg" href="img/Bella's logo.jpeg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+
+<header>
+    <div class="logo">
+        <a href="index.html" class="logo-link">
+            <img src="img/Bella's logo.jpeg" alt="Bella's Kitchen logo">
+            <h1>Bella's Kitchen</h1>
+        </a>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="index.html#home">Home</a></li>
+            <li><a href="index.html#about">About Us</a></li>
+            <li><a href="menu.html">Our Menu</a></li>
+            <li><a href="cart.html" class="active">Cart <span class="cart-badge">0</span></a></li>
+            <li><a href="checkout.html">Checkout</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <section class="cart-page">
+        <h2>Your Cart</h2>
+
+        <div id="cart-empty" class="cart-empty-state" style="display: none;">
+            <p>Your cart is empty. Ready for some delicious food?</p>
+            <a href="menu.html" class="btn">Explore Our Menu</a>
+        </div>
+
+        <div id="cart-items">
+            <!-- cart rows render here via script.js -->
+        </div>
+
+        <div id="cart-summary-section" class="cart-summary">
+            <p class="cart-summary-total">Total: <span id="cart-total">₦0</span></p>
+            <a href="checkout.html" class="btn">Proceed to Checkout</a>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <div class="footer-content">
+        <div class="footer-section">
+            <h2>Bella's Kitchen</h2>
+            <p>Where our delicacies speak grace.</p>
+        </div>
+        <div class="footer-section">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="index.html#home">Home</a></li>
+                <li><a href="index.html#about">About Us</a></li>
+                <li><a href="menu.html">Our Menu</a></li>
+                <li><a href="cart.html">Cart</a></li>
+                <li><a href="checkout.html">Checkout</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h3>Contact</h3>
+            <p>📍 153, Alfred Ruwan rd, Colombo 07, Lagos State, Nigeria</p>
+            <p>📞 +2349056637999</p>
+            <p>✉️ hello@bellaskitchen.com</p>
+        </div>
+        <div class="footer-section">
+            <h3>Opening Hours</h3>
+            <p>Monday - Friday: 10:00 AM - 9:00 PM</p>
+            <p>Saturday - Sunday: 11:00 AM - 10:00 PM</p>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>© 2026 Bella's Kitchen. All rights reserved.</p>
+        <p>Made with love, served with flavor.</p>
+    </div>
+</footer>
+
+<script src="js/menu-data.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
